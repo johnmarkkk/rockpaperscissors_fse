@@ -1,0 +1,89 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 600px;
+    width: 100%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.button-container {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    width: 80%;
+}
+
+.button-choices {
+    background-color: black;
+    border: solid 2px white;
+    padding: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.button-choices:hover {
+    box-shadow: 0 0 0 3px rgba(234, 255, 0, 0.474);
+}
+
+img {
+    width: 50px;
+}
+
+.reset,
+.autoplay-toggle {
+    background-color: white;
+    border: solid 2px white;
+    color: green;
+    padding: 10px;
+    cursor: pointer;
+    margin: 5px;
+    width: 150px;
+}
+
+.reset:hover,
+.autoplay-toggle:hover {
+    color: white;
+    background-color: green;
+    border: solid 2px white;
+}
+
+#stats {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#autoplay-status {
+    font-size: 14px;
+}
+
+
+@media screen and (max-width: 526px) {
+    .button-choices {
+        padding: 30px;
+        margin: 2px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .button-choices {
+        padding: 20px;
+       
+    }
+}
