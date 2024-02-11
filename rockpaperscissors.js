@@ -45,6 +45,7 @@ function resetScore() {
     yourStats.lose = 0;
     localStorage.removeItem('stats');
     battleSecond.innerHTML = "";
+    battles.innerHTML = "";
     stats();
 }
 
